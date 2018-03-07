@@ -14,14 +14,11 @@ class App extends Component {
         </header>
 
         <div>
-          <p>First Counter</p>
-          <Counter />
+          <Counter name="Red" color="red" />
+          <Counter name="Blue" color="blue"/>
+          <Counter name="Purple" color="purple" />
         </div>
-        <div>
-          <p>Second Counter</p>
-          <Counter />
-        </div>
-      </div>
+      </div>;
   }
 }
 

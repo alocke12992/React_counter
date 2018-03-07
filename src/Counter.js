@@ -18,9 +18,13 @@ class Counter extends React.Component {
   };
 
   render() {
+    const { name } = this.props
+    const { value } = this.state
+    const { color } = this.props
     return (
-      <div>
-        <p>{this.state.value}</p>
+      <div style={ {backgroundColor: color, color: "white"}}>
+        <p>{name} Counter</p>
+        <p>{value}</p>
         <button onClick={this.inc}>+</button>
         <button onClick={this.dec}>-</button>
       </div>
